@@ -1,0 +1,53 @@
+
+@()
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+        <link rel="stylesheet" href="@routes.Assets.versioned("css/bootstrap.min.css")">
+        <link rel="stylesheet" href="@routes.Assets.versioned("css/style.css")">
+        <script src="@routes.Assets.versioned("js/jquery.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("js/bootstrap.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+        <script type="text/javascript" src="@routes.JavaScriptController.javascriptRoutes"></script>
+    </head>
+    <body>
+    <div id="body">
+        <div class="intro-header">
+            <div class="container">
+                <div class="intro-header">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="intro-message">
+                                    <h1>Welcome Page</h1>
+                                    <h3>Choose Your Option</h3>
+                                    <hr class="intro-divider">
+                                    <ul class="list-inline intro-social-buttons">
+                                        <li>
+                                            <input type="button"  value="Sign up"class="btn btn-default btn-lg" id="btn" >
+                                        </li>
+
+                                        <li>
+                                            <input type="button"  value="Sign ip"class="btn btn-default btn-lg" id="btn1" >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>
