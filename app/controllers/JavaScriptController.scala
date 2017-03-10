@@ -11,9 +11,11 @@ class JavaScriptController extends Controller{
     Ok(
       JavaScriptReverseRouter("jsRoutes")(
         routes.javascript.CountController.count,
+        routes.javascript.HomeController.index,
         routes.javascript.HomeController.signUp,
         routes.javascript.HomeController.signIn,
-        routes.javascript.SignUpController.addAccount
+        routes.javascript.SignUpController.addAccount,
+        routes.javascript.SignInController.signInForm
       )
     ).as("text/javascript")
   }

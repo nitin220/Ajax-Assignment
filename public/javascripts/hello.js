@@ -36,25 +36,7 @@ $(document).ready(function(){
 
             })
 
-            $('#signUp').on("click",function(){
-            /*alert("clicked")*/
-                var url=jsRoutes.controllers.SignUpController.addAccount($('#lname').val,$('#uname').val,
-                $('#password').val,$('#repassword').val,$('#dateOfBitrh').val,$('#gender').val)
-                console.log("clicked")
-                url.ajax({
-                            success: function(data){
-                              $('#body').html(data);
-                              alert(data)
-                            },
-                            error: function(){
-                            $('#body').html("hello");
-                            alert("fail")
-                          }
 
-                })
-
-
-            })
 
 });
 
